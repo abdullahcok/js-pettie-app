@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <title></title>
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+  <!-- font awesome -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css" integrity="sha256-39jKbsb/ty7s7+4WzbtELS4vq9udJ+MDjGTD5mtxHZ0=" crossorigin="anonymous" />
+  <!--<script src="./js/all.js"></script>-->
+
+  <!-- google fonts -->
+   <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+  <!-- main css -->
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <header>
+      <p class="petty">Petty</p>
+      <img src="img/petty.png" alt="Petty">
+    </header>
+
+    <section>
+      <form id="pet-form">
+        <div class="form-group my-3 mx-3">
+
+            <label for="Animal">Pet: </label>
+            <select id="pet" class="form-option mb-3">
+              <option value="cat">Cat</option>
+              <option value="dog">Dog</option>
+              <option value="bird">Bird</option>
+              <option value="hamster">Hamster</option>
+            </select>
+             <input type="text" id="zip" class="form-input" placeholder="zipcode">
+             <button class="search-button" type=submit>
+               <i class="fas fa-search"></i>
+             </button>
+
+        </div>
+      </form>
+    </section>
+
+    <div class="results"></div>
+
+  </div>
+
+  <!-- jquery -->
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <!-- script js -->
+  <script src="js/app.js"x></script>
+</body>
+
+</html>
