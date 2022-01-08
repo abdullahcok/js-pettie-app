@@ -1,2 +1,2 @@
 # js-pettie-app
-pet finder app with using bts4 
+pet finder app with using api 
