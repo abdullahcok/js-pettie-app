@@ -1,5 +1,3 @@
-@import 'mixins'
-
 * {
   box-sizing: border-box;
 }
@@ -13,18 +11,17 @@ body {
   margin: 30px auto;
   width: 300px;
   height: 500px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @inclue display();
   background: #3366ff;
   border-radius: 5px;
-  box-shadow: var(--box-shadow);
+  box-shadow: 0 2px 4px black;
 }
 
 .container header {
   width: 300px;
   background: #3366ff;
-  @inclue bt-radius();
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
   padding: 5px 30px;
 }
 
@@ -44,8 +41,9 @@ body {
 
 .container section {
   width: 300px;
-  background: rgba(50, 50, 50, 0.1);
-  @include bt-radius();
+  background: #2d2d2d;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
   text-align: center;
   padding: 1px;
 }
@@ -55,7 +53,7 @@ body {
 }
 
 .container section .form-group input, .container section .form-group button, .container section .form-group .form-option {
-  border: 1px solid var(--mainWhite);
+  border: 1px solid #fff;
   font-size: 14px;
   padding: 8px;
 }
