@@ -1,80 +1,47 @@
-@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap");
-
-:root {
-  --mainPink: #ef7998;
-  --mainYellow: rgb(249, 228, 148);
-  --mainWhite: #fff;
-  --mainBlack: #1d1d1d;
-  --mainBlue: rgba(0,50,150, 0.4);
-  --darkBlue: rgba(0,50,150, 0.8);
-  --yellowTrans: rgba(249, 228, 148, 0.5);
-  --mainGrey: rgb(238, 238, 238);
-  --darkGrey: #2d2d2d;
-  --box-shadow: rgba(0, 0, 0, 1);
+* {
+  box-sizing: border-box;
 }
 
 body {
-  background: var(--mainGrey);
+  background: #434343;
   color: #fff;
 }
 
-.container{
-  margin: 40px auto;
+.container {
+  margin: 30px auto;
   width: 300px;
   height: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: rgba(0,50,150, 0.6);
+  background: #3366ff;
   border-radius: 5px;
   box-shadow: var(--box-shadow);
 }
 
-header{
+.container header {
   width: 300px;
-  background: var(--darkBlue);
+  background: #3366ff;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
   padding: 5px 30px;
 }
 
-.petty{
+.container header .co {
   float: left;
   font-size: 20px;
   margin: 10px 0;
+  font-weight: bold;
 }
 
-img{
+.container header .logo {
   width: 50px;
+  padding: 10px 40px;
   float: right;
   border-radius: 3px;
 }
 
-input,button, .form-option{
-  border: 1px solid var(--mainWhite);
-  font-size: 14px;
-  padding: 8px 12px;
-}
-
-.form-option{
-  border-radius: 3px;
-  margin: 0px;
-  width: 100px;
-}
-
-input[type='text']{
-  width: 80px;
-  box-shadow: var(--box-shadow);
-  border-top-left-radius: 3px;
-  border-bottom-left-radius: 3px;
-}
-
-button{
-  border-top-right-radius: 3px;
-  border-bottom-right-radius: 3px;
-}
-
-section{
+.container section {
   width: 300px;
   background: rgba(50, 50, 50, 0.1);
   border-top-right-radius: 5px;
@@ -83,8 +50,25 @@ section{
   padding: 1px;
 }
 
-.form-input{
-  width: 120px;
+.container section .form-group {
+  margin: 10px;
+}
+
+.container section .form-group input, .container section .form-group button, .container section .form-group .form-option {
+  border: 1px solid var(--mainWhite);
+  font-size: 14px;
+  padding: 8px;
+}
+
+.container section .form-group .form-option {
+  border-radius: 3px;
+  margin: 0px;
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.container section .form-group .form-input {
+  width: 100px;
   font-size: 14px;
   margin: 10px 0;
 }
