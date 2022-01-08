@@ -1,3 +1,5 @@
+@import 'mixins'
+
 * {
   box-sizing: border-box;
 }
@@ -22,8 +24,7 @@ body {
 .container header {
   width: 300px;
   background: #3366ff;
-  border-top-right-radius: 5px;
-  border-top-left-radius: 5px;
+  @inclue bt-radius();
   padding: 5px 30px;
 }
 
@@ -44,8 +45,7 @@ body {
 .container section {
   width: 300px;
   background: rgba(50, 50, 50, 0.1);
-  border-top-right-radius: 5px;
-  border-top-left-radius: 5px;
+  @include bt-radius();
   text-align: center;
   padding: 1px;
 }
